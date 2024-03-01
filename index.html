@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Connect 4</h1>
+            <div class="timer">Time: <span id="time">0</span> seconds</div>
+            <div class="scoreboard">
+                <div>Player 1 Score: <span id="player1Score">0</span></div>
+                <div>Player 2 Score: <span id="player2Score">0</span></div>
+            </div>
+        </div>
+        <div class="color-selection" id="colorSelection">
+            <label for="player1Color">Player 1 Color:</label>
+            <input type="color" id="player1Color" value="#FF0000">
+            <label for="player2Color">Player 2 Color:</label>
+            <input type="color" id="player2Color" value="#FFFF00">
+            <button id="colorOkay">Okay</button>
+        </div>
+        <div class="winner-popup" id="winnerPopup" style="display: none;">
+            <p id="winnerMessage"></p>
+            <button id="switchColors">Switch Colors</button>
+            <button id="keepColors">Keep Colors</button>
+        </div>
+        <div id="connect4"></div>
+        <button id="reset">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
